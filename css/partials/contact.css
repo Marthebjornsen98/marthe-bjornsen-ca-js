@@ -27,14 +27,14 @@ input {
 }
 
 #subject {
-    height: 80px;
+    height: 90px;
 }
 
 .submit__cta {
     margin-top: 15px;
     background-color: var(--yellow);
     border: none;
-    height: 50px;
+    height: 55px;
     border-radius: 10px;
     font-weight: var(--mid-weight);
 }

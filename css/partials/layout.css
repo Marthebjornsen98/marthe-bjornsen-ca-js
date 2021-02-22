@@ -28,3 +28,16 @@ h1 {
 .body-text {
     margin-top: 15px;
 }
+
+.error {
+    color: red;
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}

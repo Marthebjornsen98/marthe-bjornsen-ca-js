@@ -18,7 +18,7 @@
 
 /* Background image container, holding everything in the above the fold*/
 .background {
-    background-image: url(../../img/background.png);
+    background-image: url(../../img/background_big.png);
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
