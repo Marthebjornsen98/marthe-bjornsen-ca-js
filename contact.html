@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo__container">
+                <a href="index.html"><img class="logo" src="img/pokémon_logo.svg" alt="pokemon logo"></a>
+            </div>
+            <ul class="nav__list">
+                <li><a class="nav__element" href="#">Home</a></li>
+                <li><a class="nav__element" href="#">Contact</a></li>
+                <li><a class="nav__element" href="#">Information</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="contact__header">
+            <h1 class="smaller__header">Enter your information here</h1>
+        </div>
+        <div class="form__container">
+            <form class="form">
+                <input type="text" placeholder="Name" id="name">
+                <input type="text" placeholder="Email" id="email">
+                <input type="text" placeholder="Subject" id="subject">
+                <input type="text" placeholder="Adress" id="adress">
+                <form mathod="get" action="/contact.html">
+                    <button class="submit__cta">Submit</button>
+                </form>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer-information__container">
+                <div class="footer__logo--container">
+                    <img class="footer__logo" src="/img/pokémon_logo.svg" alt="Pokemón logo">
+                </div>
+                <div class="footer__information">
+                    Pokémon features several species of creatures called "Pokémon" that players, called
+                    "trainers", are encouraged to capture, train, and use to battle other Pokémons or
+                    interact with the game's world.
+                </div>
+                <div class="footer__social-media"></div>
+            </div>
+            <div class="footer-text__container">
+                <ul class="footer__list">
+                    <h3 class="footer__heading">Contact</h3>
+                    <li><a class="footer__element" href="#">Ask us anyting?</a></li>
+                    <li><a class="footer__element" href="#">Social Media</a></li>
+                    <li><a class="footer__element" href="#">Email</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <h3 class="footer__heading">Information</h3>
+                    <li><a class="footer__element" href="#">Q&A</a></li>
+                    <li><a class="footer__element" href="#">Location</a></li>
+                    <li><a class="footer__element" href="#">Meet the collector</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <h3 class="footer__heading">Collection</h3>
+                    <li><a class="footer__element" href="#">Owner</a></li>
+                    <li><a class="footer__element" href="#">How to?</a></li>
+                    <li><a class="footer__element" href="#">Who to contact?</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- <script src="js/component/alert.js"></script> -->
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

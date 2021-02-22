@@ -1,0 +1,105 @@
+.login__cta {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 30px;
+    background-color: var(--yellow);
+    font-weight: var(--mid-weight);
+}
+
+.login__cta:hover {
+    cursor: pointer;
+    font-weight: var(--heading-weight);
+    transform: var(--hover-up);
+    transition: var(--transition);
+}
+
+/* Background image container, holding everything in the above the fold*/
+.background {
+    background-image: url(../../img/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Container holding the text and the picture*/
+.background__container {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Information text container */
+.pikachu-information__container {
+    width: 45%;
+    margin-bottom: 300px;
+}
+
+/* Picture container */
+.pikachu__img--container {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.pikachu__img {
+    width: 100%;
+}
+
+
+/* Title over the cards */
+.card__title {
+    margin: 100px auto 0px auto;
+    width: 85%;
+}
+
+/* Cards */
+.card__container {
+    display: flex;
+    width: 85%;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    margin: 20px 0px;
+    padding: 20px 0px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.card__image{
+    width: 85%;
+}
+
+.pokemon__type {
+    margin-bottom: 20px;
+}
+
+.read-more__cta {
+    margin: 20px auto 0px auto;
+    padding: 12px 75px;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    font-size: var(--bodytext-size);
+    font-weight: var(--mid-weight);
+    background-color: var(--yellow);
+}
+
+.read-more__cta:hover {
+    cursor: pointer;
+    transform: var(--hover-up);
+    transition: var(--transition);
+}

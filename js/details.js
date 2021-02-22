@@ -5,25 +5,17 @@ async function getPokemon() {
         const pokemonResults = jsonObject.data;
 
         console.log(pokemonResults);
-        // document.querySelector('.card__title').innerHTML = `
-        //     <h2>Browse through all the Pokémon cards here</h2>
-        // `
 
         for (let i = 0; i < pokemonResults.length; i++) {
             if (i === 20) {
                 break;
             };
 
-            document.querySelector('.card__container').innerHTML += `
-            <div class="cards">
-                <h2 class="card__header" >${pokemonResults[i].name}</h2>
-                <p class="pokemon__type">${pokemonResults[i].types}</p>
-                <img class="card__image" src="${pokemonResults[i].images.small}">
-                <div class="read-more__cta">
-                    <a class="read-more" href="details.html?id=${pokemonResults[i].id}">Read More</a>
-                </div>
-            </div>
-            `
+            // document.querySelector('.details__container').innerHTML += `
+            // <div class="details">
+            //     <h2>${pokemonResults[i].name}</h2>
+            // </div>
+            // `
         };
         console.log(pokemonResults[i]);
 

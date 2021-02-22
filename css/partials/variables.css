@@ -1,0 +1,22 @@
+/* Fonts */
+:root{
+    --heading-weight: 700;
+    --mid-weight: 600;
+    --bodytext-weight: 400;
+    --line-height: 1.5rem;
+    --font-color: #1b1c1e;
+    --bodytext-size: 1rem;
+}
+
+/* Effects */
+:root{
+    --hover-up: translateY(-3px);
+    --transition: 0.3s;
+    --box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08);
+}
+
+/* colors  */
+:root{
+    --white: #ffffff;
+    --yellow: #FAD61D;
+}

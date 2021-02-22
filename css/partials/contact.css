@@ -1,0 +1,47 @@
+.contact__header {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.form__container {
+    width: 85%;
+    margin: 50px auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+}
+
+input {
+    margin: 15px 0px;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: solid 2px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--box-shadow);
+    color: var(--font-color);
+}
+
+#subject {
+    height: 80px;
+}
+
+.submit__cta {
+    margin-top: 15px;
+    background-color: var(--yellow);
+    border: none;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: var(--mid-weight);
+}
+
+.submit__cta:hover {
+    cursor: pointer;
+    font-weight: var(--heading-weight);
+    transform: var(--hover-up);
+    transition: var(--transition);
+}
