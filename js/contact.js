@@ -10,12 +10,13 @@ const adressError = document.querySelector('.adressError');
 submit.onclick = function (event) {
     event.preventDefault();
 
+    // All inputs
     const name = document.querySelector('#name').value.trim();
     const email = document.querySelector('#email').value.trim();
     const subject = document.querySelector('#subject').value.trim();
     const adress = document.querySelector('#adress').value.trim();
 
-    if (testLengt(name, 1)) {
+    if (testLength(name, 1)) {
         nameError.classList.add('hide');
         nameError.classList.remove('show');
     } else {
@@ -23,7 +24,7 @@ submit.onclick = function (event) {
         nameError.classList.remove('hide');
     }
 
-    if (testLengt(subject, 10)) {
+    if (testLength(subject, 10)) {
         subjectError.classList.add('hide');
         subjectError.classList.remove('show');
     } else {
@@ -31,7 +32,7 @@ submit.onclick = function (event) {
         subjectError.classList.remove('hide');
     }
 
-    if (testLengt(adress, 25)) {
+    if (testLength(adress, 25)) {
         adressError.classList.add('hide');
         adressError.classList.remove('show');
     } else {
@@ -54,7 +55,7 @@ function validateEmail(addEmail) {
     return isEmailValid;
 };
 
-function testLengt(element, length) {
+function testLength(element, length) {
     if (element.length > length) {
         return true;
     } else {

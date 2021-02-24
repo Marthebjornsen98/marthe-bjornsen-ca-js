@@ -28,12 +28,12 @@ async function getPokemon() {
         console.log(pokemonResults[i]);
 
     } catch (error) {
-        // document.querySelector('.alert') += showAlertTouser(error, 'danger');
+        document.querySelector('.alert') += showAlertTouser(error, 'danger');
 
     } finally {
-        // setTimeout(function () {
-        //     document.querySelector('.alert').innerHTML = '';
-        // }, 3000);
+        setTimeout(function () {
+            document.querySelector('.alert').innerHTML = '';
+        }, 3000);
     };
 };
 

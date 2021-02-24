@@ -8,6 +8,19 @@
     list-style: none;
 }
 
+body {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+main {
+    grid-area: main;
+}
+
 a {
     color: var(--font-color);
     font-weight: var(--mid-weight);
@@ -32,6 +45,7 @@ h1 {
 .error {
     color: red;
     display: none;
+    margin-left: 10px;
 }
 
 .hide {
