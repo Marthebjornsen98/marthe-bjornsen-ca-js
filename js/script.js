@@ -1,13 +1,12 @@
 async function getPokemon() {
     try {
+        document.querySelector('.loading').innerHTML = `
+        <img src="https://cdn.dribbble.com/users/341887/screenshots/4595077/arizdesign.gif"/>
+        `;
+
         const response = await fetch('https://api.pokemontcg.io/v2/cards');
         const jsonObject = await response.json();
         const pokemonResults = jsonObject.data;
-
-        console.log(pokemonResults);
-        // document.querySelector('.card__title').innerHTML = `
-        //     <h2>Browse through all the Pokémon cards here</h2>
-        // `
 
         for (let i = 0; i < pokemonResults.length; i++) {
             if (i === 20) {
@@ -25,15 +24,20 @@ async function getPokemon() {
             </div>
             `
         };
-        console.log(pokemonResults[i]);
 
     } catch (error) {
-        document.querySelector('.alert') += showAlertTouser(error, 'danger');
+        document.querySelector('.alert').innerHTML = showAlert(
+            'An error occured, please contact Noroff.no',
+            'danger'
+        );
+        console.log(error);
 
     } finally {
         setTimeout(function () {
-            document.querySelector('.alert').innerHTML = '';
+            document.querySelector('.alert').innerHTML = ``;
         }, 3000);
+
+        document.querySelector('.loading').innerHTML = ``;
     };
 };
 
